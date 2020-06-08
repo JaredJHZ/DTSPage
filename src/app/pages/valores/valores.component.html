@@ -1,0 +1,74 @@
+<div class="lista-valores">
+    <div class="row">
+        <div class="contenedor-tarjetas">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>{{valores[0]['name']}}</mat-card-title>
+                </mat-card-header>
+                <img class="img" mat-card-image [src]="valores[0]['img']" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <p>
+                    {{valores[0]['desc']}}
+                  </p>
+                </mat-card-content>
+              </mat-card>
+        </div>
+
+        <div class="contenedor-tarjetas">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>{{valores[1]['name']}}</mat-card-title>
+                </mat-card-header>
+                <img class="img" mat-card-image [src]="valores[1]['img']" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <p>
+                    {{valores[1]['desc']}}
+                  </p>
+                </mat-card-content>
+              </mat-card>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="contenedor-tarjetas">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>{{valores[2]['name']}}</mat-card-title>
+                </mat-card-header>
+                <img class="img" mat-card-image [src]="valores[2]['img']" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <p>
+                    {{valores[2]['desc']}}
+                  </p>
+                </mat-card-content>
+              </mat-card>
+        </div>
+
+        <div class="contenedor-tarjetas">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>{{valores[3]['name']}}</mat-card-title>
+                </mat-card-header>
+                <img class="img" mat-card-image [src]="valores[3]['img']" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <p>
+                    {{valores[3]['desc']}}
+                  </p>
+                </mat-card-content>
+              </mat-card>
+        </div>
+    </div>
+    <div class="srow">
+      <div class="buttons">
+        <div class="button-before">
+            <button mat-raised-button color="primary" (click)="_homeService.previousPage()" >Misión y Visión</button>
+        </div>
+        <div class="button-next">
+            <button mat-raised-button color="primary" (click)="_homeService.init()" >Portada</button>
+        </div>
+      </div>
+
+</div>
+
+
+</div>

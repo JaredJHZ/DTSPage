@@ -1,0 +1,28 @@
+.label-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    margin: 0;
+}
+
+.hide {
+    display: none !important;
+}
+
+@media (max-device-width : 812px){ 
+    .label-lists {
+        display: none;
+    }
+
+    .hide {
+        width: 90vw !important;
+        display: flex !important; 
+    }
+
+    img {
+        width: 30%;
+    }
+    
+}

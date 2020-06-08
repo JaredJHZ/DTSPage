@@ -1,0 +1,65 @@
+.lista-valores {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+}
+
+.contenedor-tarjetas {
+    width: 20%;
+    animation: fadeIn 1.5s; 
+    margin-left: 80px;
+}
+
+.contenedor-tarjetas: :hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.row {
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.srow {
+    height: 10%;
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.img {
+    height: 25vh;
+}
+
+.example-card {
+    height: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+@media (max-device-width : 812px)
+ { 
+    .img {
+        height: 15vh;
+    }
+    .contenedor-tarjetas {
+        width: 45%;
+        margin: 5px;
+    }
+}

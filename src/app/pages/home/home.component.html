@@ -1,0 +1,28 @@
+<article>
+
+    <div *ngIf="pag === 1" class="bg-image" style="display: flex; justify-content: center; align-items: center;"></div>
+
+    <div  *ngIf="pag === 1"  class="bg-text">
+        <h1>¿Quiénes somos DTS Solutions?</h1>
+        <button (click)="_homeService.nextPage()" mat-button>Descubre</button>
+    </div>
+
+    
+    <div *ngIf="pag === 2" class="resume" >
+      <app-about></app-about>
+    </div>
+
+
+    <div *ngIf="pag === 3" class="resume">
+        <app-values></app-values>
+    </div>
+
+    <div *ngIf="pag === 4" class="resume">
+        <app-valores></app-valores>
+    </div>
+
+
+ 
+
+
+</article>

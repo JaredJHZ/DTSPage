@@ -1,0 +1,9 @@
+<mat-toolbar color="primary" style="width: 100%;">
+    <img width="8%" style="cursor: pointer;" src="assets/img/dtsLogo.png" (click)="goToRoute('/')" />
+    <ul class="label-lists">
+        <li *ngFor="let label of _menuService.getLabels()"><button mat-button (click)="goToRoute(label['route'])">{{label['name']}}</button></li>
+    </ul>
+    <div class="hide" style="display: flex; justify-content: flex-end; width: 70%;">
+        <button (click)="toggleSidenav()" mat-button style="justify-self: flex-end;">Menu</button>
+    </div>
+</mat-toolbar>
