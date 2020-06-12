@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
 
   pag:number;
 
+  images = [1,2].map((n) => `assets/img/banner${n}.png`);
   constructor(public _homeService: HomeService) {
 
   }

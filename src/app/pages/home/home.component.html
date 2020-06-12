@@ -1,17 +1,17 @@
-<article>
+<article style="background-color: white !important;">
 
     <div *ngIf="pag === 1" class="bg-image" style="display: flex; justify-content: center; align-items: center;"></div>
 
-    <div  *ngIf="pag === 1"  class="bg-text">
-        <h1>¿Quiénes somos DTS Solutions?</h1>
-        <button (click)="_homeService.nextPage()" mat-button>Descubre</button>
+    <div class="inside"  *ngIf="pag === 1"  class="bg-text" style=" font-size: 1.3rem ;width: 100% !important; display: flex; flex-flow: column; justify-content: center; align-items: center;">
+        <h1>Somos una empreza dedicada al desarrollo de nuevas tecnologías. </h1>
+        <h1>Desde aplicaciones web utilizando los frameworks de desarrollo más modernos a móviles tanto iOS o la nube.</h1>
+        <h1>No hay solución tecnológica que no podamos implementar</h1>
+        <button mat-raised-button (click)="_homeService.nextPage()" color="primary"><mat-icon>read_more</mat-icon></button>
     </div>
 
-    
     <div *ngIf="pag === 2" class="resume" >
       <app-about></app-about>
     </div>
-
 
     <div *ngIf="pag === 3" class="resume">
         <app-values></app-values>
@@ -20,9 +20,5 @@
     <div *ngIf="pag === 4" class="resume">
         <app-valores></app-valores>
     </div>
-
-
- 
-
 
 </article>

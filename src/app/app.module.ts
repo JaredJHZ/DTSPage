@@ -13,6 +13,8 @@ import { ValoresComponent } from './pages/valores/valores.component';
 import { SolucionesComponent } from './pages/soluciones/soluciones.component';
 import { ContactanosComponent } from './pages/contactanos/contactanos.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { ModalComponent } from './components/modal/modal.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     ValuesComponent,
     ValoresComponent,
     SolucionesComponent,
-    ContactanosComponent
+    ContactanosComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

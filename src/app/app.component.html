@@ -1,9 +1,9 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="over" [(opened)]="opened" style="width: 30%;">
-    <img style="width: 100%;" src="assets/img/dtsLogo.png" alt="logo">
+    <img style="margin-top: 25px;" style="width: 100%;" src="assets/img/dtsLogo.png" alt="logo">
     <ul class="label-lists" style="margin-top: 10px; text-align: center;">
-      <li *ngFor="let label of _menuService.getLabels()"><button mat-button (click)="goToRoute(label['route'])">{{label['name']}}</button></li>
-      <li><button mat-button (click)="goToRoute('/')">Inicio</button></li>
+      <li style="margin-top: 25px;" *ngFor="let label of _menuService.getLabels()" (click)="goToRoute(label['route'])">{{label['name']}}</li>
+      <li style="margin-top: 25px;" (click)="goToRoute('/')">Inicio</li>
     </ul>
   </mat-sidenav>
 

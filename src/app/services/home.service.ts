@@ -16,7 +16,7 @@ export class HomeService {
       "name": "Soluciones"
     },
     {
-      "name": "Contactos"
+      "name": "Contactanos"
     }
   ];
 

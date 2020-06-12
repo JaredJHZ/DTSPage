@@ -1,39 +1,39 @@
 <div class="content">
 
-    <div class="row" style="height: 10%;">
-        <div class="title">
-            <h1 class="text-center">¿Quiénes somos?</h1>
-        </div>
-    </div>
-    <div class="row" style="height: 40%">
-        <div class="image-content">
-            <div class="image-container">
-                <img style="margin: 20px;" src="../../../assets/img/somos.jpeg" alt="somos" srcset="">
-            </div>
-        </div>
+    <div class="rowImage">
+        <img src="../../../assets/img/somos.jpeg" alt="somos" srcset="">
     </div>
 
-    <div class="row" style="height: 40%;">
-        <div class="info-content" >
+    <div class="rowContent" >
             <div class="text" style="padding: 10px;">
-               <p style="padding: 3px;">
-                   DTS Solutions (Digital transformation Specialist) Somos un grupo de especialistas con más de 10 años de experiencia en el sector tecnológico, apasionados por brindar soluciones enfocadas en utilizar la tecnología como una ventaja competitiva, alineadas a los objetivos de negocios de cada empresa. 
-               </p>
-               <p>
-                   Nuestro propósito principal es ofrecer servicios con lo último en vanguardia tecnológica e innovación, siguiendo siempre los más altos estándares de calidad y garantizando en todo momento la fiabilidad y seguridad de la información. 
-               </p>
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h1 class="text-center">¿Quiénes somos?</h1>
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            DTS Solutions (Digital transformation Specialist) Somos un grupo de especialistas con más de 10 años de experiencia en el sector tecnológico, apasionados por brindar soluciones enfocadas en utilizar la tecnología como una ventaja competitiva, alineadas a los objetivos de negocios de cada empresa. 
+                        </p>
+                        <p>
+                            Nuestro propósito principal es ofrecer servicios con lo último en vanguardia tecnológica e innovación, siguiendo siempre los más altos estándares de calidad y garantizando en todo momento la fiabilidad y seguridad de la información. 
+                        </p>
+                    </mat-card-content>
+                </mat-card>
             </div>
-       </div>
     </div>
 
 
-    <div class="row" style="height: 10%;">
-        <div class="buttons" style="padding: 10px;">
+    <div class="rowButtons" style="height: 20%;">
+        <div class="buttons" style="padding: 12px;">
             <div class="button-before">
-                <button mat-raised-button color="primary" (click)="_homeService.previousPage()" >Portada</button>
+                <button mat-raised-button color="primary" (click)="_homeService.previousPage()" ><mat-icon aria-hidden="false" aria-label="Example home icon">keyboard_arrow_left
+                </mat-icon></button>
             </div>
             <div class="button-next">
-                <button mat-raised-button color="primary" (click)="_homeService.nextPage()" >Misión y Visión</button>
+                <button mat-raised-button color="primary" (click)="_homeService.nextPage()" ><mat-icon aria-hidden="false" aria-label="Example home icon">keyboard_arrow_right
+                </mat-icon></button>
             </div>
         </div>
     

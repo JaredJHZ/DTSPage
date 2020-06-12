@@ -1,96 +1,61 @@
-<div class="main">
-    <div class="rowIzquierda">
+<div class="main" style="background-color: white !important;">
+    <div class="rowIzquierda" >
         <div class="custom">
             <mat-card>
                 <mat-card-header>
-                    <mat-card-title><h1>E-commerce</h1></mat-card-title>
+                    <mat-card-title><h1>{{soluciones[0].name}}</h1></mat-card-title>
                 </mat-card-header>
                 <mat-card-content>
-                    <p>Contamos con soluciones de Ecommerce para distintos tipos de giros, ya sea relojes, ropa, calzado, tecnología, contamos con una solución</p>
+                    <div class="info">
+                        <img [src]="soluciones[0].image" alt="ecommerce">
+                        <button (click)="verMasHandler(soluciones[0]['name'],soluciones[0]['description'])" mat-raised-button color="accent">Ver mas</button>
+                    </div>
                 </mat-card-content>
             </mat-card>
         </div>
-        <div class="info">
-            <img src="assets/img/ecommerce.png" alt="ecommerce">
-        </div>
-    </div>
-    <div class="rowDerecha">
-        <div class="info">
-            <img style="height:80%;" src="assets/img/appmovil.png" alt="ecommerce">
-        </div>
         <div class="custom">
             <mat-card>
                 <mat-card-header>
-                    <mat-card-title><h1>Aplicaciones Móviles</h1></mat-card-title>
+                    <mat-card-title><h1>{{soluciones[1].name}}</h1></mat-card-title>
                 </mat-card-header>
                 <mat-card-content>
-                    <p>Ya sean para iOS o Android, podemos ofrecerle la aplicación móvil que deseee.</p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-    </div>
-    <div class="rowIzquierda">
-        <div class="custom">
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title><h1>Desarrollo de Software</h1></mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <p>Podemos crear el software que usted necesite.</p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-        <div class="info">
-            <img src="assets/img/software.png" alt="ecommerce">
-        </div>
-    </div>
-    <div class="rowDerecha">
-        <div class="info">
-            <img style="height:80%;" src="assets/img/aws.png" alt="ecommerce">
-        </div>
-        <div class="custom">
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title><h1>Cloud</h1></mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <p>Podemos diseñar y crear arquitecturas basadas en cloud computing a partir de AWS. Así como ofrecer servicio de soporte.</p>
+                    <div class="info">
+                        <img [src]="soluciones[1].image" alt="ecommerce">
+                        <button (click)="verMasHandler(soluciones[1]['name'],soluciones[1]['description'])" mat-raised-button color="accent">Ver mas</button>
+                    </div>
                 </mat-card-content>
             </mat-card>
         </div>
     </div>
-    <div class="rowIzquierda">
-        <div class="custom">
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title><h1>Servicios</h1></mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <ul>
-                        <li>
-                            Pólizas de Soporte Ecommerce: 
-                            <ul>
-                                <li>Actualización de catálogo. </li>
-                                <li>Nuevo contenido </li>
-                            </ul>
-                        </li>
 
-                        <li>
-                            Póliza de Soporte Cloud 
-                            <ul>
-                                <li>Implementación</li>
-                                <li>Soporte a servicios CORE de AWS </li>
-                            </ul>
-                        </li>
-                        <li>
-                            Póliza de Soporte Desarrollo: 
-                        </li>
-                    </ul>
+    <div class="rowDerecha" >
+        <div class="custom">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title><h1>{{soluciones[2].name}}</h1></mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="info">
+                        <img [src]="soluciones[2].image" alt="ecommerce">
+                        <button (click)="verMasHandler(soluciones[2]['name'],soluciones[2]['description'])" mat-raised-button color="accent">Ver mas</button>
+                    </div>
                 </mat-card-content>
             </mat-card>
         </div>
-        <div class="info">
-            <img src="assets/img/services.png" alt="ecommerce">
+        <div class="custom">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title><h1>{{soluciones[3].name}}</h1></mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="info">
+                        <img [src]="soluciones[3].image" alt="ecommerce">
+                        <button (click)="verMasHandler(soluciones[3]['name'],soluciones[3]['description'])" mat-raised-button color="accent">Ver mas</button>
+                    </div>
+                </mat-card-content>
+            </mat-card>
         </div>
     </div>
+
+
 </div>

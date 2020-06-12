@@ -6,7 +6,7 @@
 
         <img src="../../../assets/img/leaders.jpeg" alt="leadership" >
 
-        <div class="container">
+        <div style="display: flex; justify-content: flex-end;">
             <mat-card class="example-card">
                 <mat-card-header>
                   <mat-card-title><h1>Misión</h1></mat-card-title>
@@ -24,7 +24,7 @@
 
     <div class="vision">
 
-        <div class="container">
+        <div>
 
             
             <mat-card class="example-card">
@@ -54,10 +54,12 @@
 
     <div class="buttons">
         <div class="button-before">
-            <button mat-raised-button color="primary" (click)="_homeService.previousPage()" >DTS</button>
+            <button mat-raised-button color="primary" (click)="_homeService.previousPage()" ><mat-icon aria-hidden="false" aria-label="Example home icon">keyboard_arrow_left
+            </mat-icon></button>
         </div>
         <div class="button-next">
-            <button mat-raised-button color="primary" (click)="_homeService.nextPage()" >Valores</button>
+            <button mat-raised-button color="primary" (click)="_homeService.nextPage()" ><mat-icon aria-hidden="false" aria-label="Example home icon">keyboard_arrow_right
+            </mat-icon></button>
         </div>
     </div>
 

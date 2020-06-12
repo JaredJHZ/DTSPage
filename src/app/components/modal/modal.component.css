@@ -1,0 +1,5 @@
+@media (max-device-width : 812px){ 
+    .modal {
+        background-color: #357cd2; margin: 0; padding: 15%; height: 100%;
+    }
+  }

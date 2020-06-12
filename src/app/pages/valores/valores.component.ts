@@ -10,7 +10,7 @@ export class ValoresComponent implements OnInit {
 
   valores: object [] = [
     {
-      "name": "Innovacion",
+      "name": "Innovación",
       "desc": "Somos una empresa enfocado en la innovacion",
       "img":"https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
@@ -20,12 +20,12 @@ export class ValoresComponent implements OnInit {
       "img": "https://images.pexels.com/photos/327533/pexels-photo-327533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
-      "name": "Pasion",
+      "name": "Pasión",
       "desc":"Trabajamos con pasion",
       "img":"https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
-      "name": "Etica",
+      "name": "Ética",
       "desc":"Somos una empresa que trabaja con etica",
       "img":"https://images.pexels.com/photos/340152/pexels-photo-340152.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     }
