@@ -1,61 +1,31 @@
-<div class="main" style="background-color: white !important;">
-    <div class="rowIzquierda" >
-        <div class="custom">
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title><h1>{{soluciones[0].name}}</h1></mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <div class="info">
-                        <img [src]="soluciones[0].image" alt="ecommerce">
-                        <button (click)="verMasHandler(soluciones[0]['name'],soluciones[0]['description'])" mat-raised-button color="accent">Ver mas</button>
-                    </div>
-                </mat-card-content>
-            </mat-card>
-        </div>
-        <div class="custom">
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title><h1>{{soluciones[1].name}}</h1></mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <div class="info">
-                        <img [src]="soluciones[1].image" alt="ecommerce">
-                        <button (click)="verMasHandler(soluciones[1]['name'],soluciones[1]['description'])" mat-raised-button color="accent">Ver mas</button>
-                    </div>
-                </mat-card-content>
-            </mat-card>
-        </div>
+<div class="article" animateOnScroll animated-delay-1 animationName="animated fadeInDown" style="height: 93vh;">
+    <div class="article-img">
+        <img src="assets/img/software.png" alt="software">
     </div>
-
-    <div class="rowDerecha" >
-        <div class="custom">
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title><h1>{{soluciones[2].name}}</h1></mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <div class="info">
-                        <img [src]="soluciones[2].image" alt="ecommerce">
-                        <button (click)="verMasHandler(soluciones[2]['name'],soluciones[2]['description'])" mat-raised-button color="accent">Ver mas</button>
-                    </div>
-                </mat-card-content>
-            </mat-card>
-        </div>
-        <div class="custom">
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title><h1>{{soluciones[3].name}}</h1></mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <div class="info">
-                        <img [src]="soluciones[3].image" alt="ecommerce">
-                        <button (click)="verMasHandler(soluciones[3]['name'],soluciones[3]['description'])" mat-raised-button color="accent">Ver mas</button>
-                    </div>
-                </mat-card-content>
-            </mat-card>
-        </div>
+    <div class="content-right">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    Desarrollo de software a la medida
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p *ngFor="let solucion of soluciones[2]['description']">
+                    {{solucion}}
+                </p>
+                <p>Nuestros soluciones incluyen: </p>
+                <ul>
+                    <li *ngFor="let servicio of soluciones[2]['services']">
+                        {{servicio}}
+                    </li>
+                </ul>
+                <ul class="logos">
+                    <li><img src="https://www.wildnettechnologies.com/wp-content/uploads/2018/04/mean-stack-2.png" alt="angular"></li>
+                    <li><img src="https://miro.medium.com/max/800/1*meCFnZ5MK_7Fu1ogYfBvNQ.png" alt="react"></li>
+                    <li><img src="https://4.bp.blogspot.com/-ou-a_Aa1t7A/W6IhNc3Q0gI/AAAAAAAAD6Y/pwh44arKiuM_NBqB1H7Pz4-7QhUxAgZkACLcBGAs/s1600/spring-boot-logo.png" alt="spring"></li>
+                    <li><img src="https://4.bp.blogspot.com/-NciPNfpYqtY/VS2QLOe-agI/AAAAAAAAALQ/x5izeg24iTI/s1600/postgresql-logo.png" alt="sgbd"></li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
     </div>
-
-
 </div>

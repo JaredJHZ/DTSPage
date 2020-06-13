@@ -1,24 +1,57 @@
-<article style="background-color: white !important;">
+<article style="background-color: white !important; height: 100vh;" animateOnScroll animationName="animated fadeIn">
 
-    <div *ngIf="pag === 1" class="bg-image" style="display: flex; justify-content: center; align-items: center;"></div>
+    <div class="bg-image content w-100">
 
-    <div class="inside"  *ngIf="pag === 1"  class="bg-text" style=" font-size: 1.3rem ;width: 100% !important; display: flex; flex-flow: column; justify-content: center; align-items: center;">
-        <h1>Somos una empreza dedicada al desarrollo de nuevas tecnologías. </h1>
-        <h1>Desde aplicaciones web utilizando los frameworks de desarrollo más modernos a móviles tanto iOS o la nube.</h1>
-        <h1>No hay solución tecnológica que no podamos implementar</h1>
-        <button mat-raised-button (click)="_homeService.nextPage()" color="primary"><mat-icon>read_more</mat-icon></button>
+      <div class="row align-items-center justify-content-center m-0  w-100" style="height: 70%;">
+        <div class="col-md-12" style="padding-top: 2%;">
+          <ngb-carousel>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper;">
+                <img [src]="images[0]" alt="Random first slide" class="car-img">
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper" >
+                <img [src]="images[1]" alt="Random second slide" class="car-img" >
+              </div>
+            </ng-template>
+          </ngb-carousel>
+        </div>
+      </div>
+
+
+
+        <div class="row align-items-center m-0 w-100 justify-content-center icons" style="width: 95%; margin-top: 8%; height: 20%;">
+          <div class="col-3 text-center">
+            <img src="https://www.vippng.com/png/full/138-1389933_ios-logo-icono-descarga-gratuita-y-ios.png" alt="ios">
+          </div>
+          <div class="col-3 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Android_logo_2019.svg/1173px-Android_logo_2019.svg.png" alt="android">
+          </div>
+          <div class="col-3 text-center">
+            <img src="https://icons.iconarchive.com/icons/thehoth/seo/256/seo-web-code-icon.png" alt="code">
+          </div>
+          <div class="col-3 text-center">
+            <img src="https://i.ya-webdesign.com/images/cloud-computing-png-4.png" alt="aws">
+          </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="center-content">
+                <button (click)="scroll(about)" mat-raised-button>Descubre</button>
+            </div>
+        </div>
     </div>
+</article>
 
-    <div *ngIf="pag === 2" class="resume" >
-      <app-about></app-about>
-    </div>
+<article #about animateOnScroll animated-delay-1 animationName="animated fadeInDown" >
+  <app-about></app-about>
+</article>
 
-    <div *ngIf="pag === 3" class="resume">
-        <app-values></app-values>
-    </div>
+<article #about animateOnScroll animated-delay-1 animationName="animated pulse" >
+  <app-values></app-values>
+</article>
 
-    <div *ngIf="pag === 4" class="resume">
-        <app-valores></app-valores>
-    </div>
-
+<article #about animateOnScroll animated-delay-1 animationName="animated tada" >
+  <app-valores></app-valores>
 </article>

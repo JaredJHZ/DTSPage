@@ -1,14 +1,23 @@
 .label-lists {
     display: flex;
-    justify-content: center;
     align-items: center;
-    align-content: center;
     list-style: none;
     margin: 0;
     height: 100%;
 }
 .hide {
     display: none !important;
+}
+
+.container-image {
+    display: flex;
+    justify-content: center ;
+    width: 7vw; 
+    height: 100%;
+}
+
+.container-image img {
+    width:95%;
 }
 
 .navbar {
@@ -42,4 +51,16 @@
     a {
         margin: 0 !important;
     }
+    .container-image {
+        display: flex;
+        justify-content: center ;
+        background-color: white;
+        width: 37vw; 
+        height: 100%;
+    }
+    
+    .container-image img {
+        width: 100%;
+    }
+    
 }

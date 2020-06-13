@@ -15,7 +15,7 @@ import { ContactanosComponent } from './pages/contactanos/contactanos.component'
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ModalComponent } from './components/modal/modal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

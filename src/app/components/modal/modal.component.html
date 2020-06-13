@@ -1,9 +1,14 @@
-<div style="background-color: #357cd2; margin: 0; padding: 5%; height: 100%;">
-    <header>
-        <h1  style="text-align: center; font-size: 2rem; color: white;">{{data['name']}}</h1>
-    </header>
-    <p style="font-size: 1rem; margin: 0em; color: #d5edfd;">
-        {{data['description']}}
-    </p>
+<div style="display: flex; justify-content: center; padding: 5px; align-items: center; align-content: center; height: 100%; width: 100%;">
+    <mat-card style="width:  100% !important;">
+        <mat-card-header>
+            <mat-card-title>{{data['name']}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p *ngFor="let desc of data['description']" > {{desc}} </p>
+            <ul>
+                <li *ngFor="let service of data['services'] ">{{service}}</li>
+            </ul>
+        </mat-card-content>
+    </mat-card>
 </div>
 

@@ -1,7 +1,9 @@
-<mat-toolbar color="primary" class="navbar">
-    <!-- <img width="13%" style="cursor: pointer;" src="assets/img/dtsLogo.png" (click)="goToRoute('/')" /> -->
-    <ul class="label-lists">
-        <li><button style="font-size: 22px;" mat-button  (click)="goToRoute('/')">DTS Solutions</button></li>
+<mat-toolbar style="display: flex;">
+    <div class="container-image">
+        <img src="assets/img/dtsLogo.png" (click)="goToRoute('/')" />
+    </div>
+    <ul class="label-lists" style="width: 80vw; height: 100%;">
+        <!-- <li><button style="font-size: 22px;" mat-button  (click)="goToRoute('/')">DTS Solutions</button></li> -->
         <li *ngFor="let label of _menuService.getLabels()"><button style="font-size: 22px;" mat-button (click)="goToRoute(label['route'])">{{label['name']}}</button></li>
     </ul>
     <div class="hide" style="display: flex; justify-content: flex-end; width: 70%;">

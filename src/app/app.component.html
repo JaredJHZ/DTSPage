@@ -1,4 +1,4 @@
-<mat-sidenav-container>
+<mat-sidenav-container style="overflow-x: hidden;">
   <mat-sidenav #sidenav mode="over" [(opened)]="opened" style="width: 30%;">
     <img style="margin-top: 25px;" style="width: 100%;" src="assets/img/dtsLogo.png" alt="logo">
     <ul class="label-lists" style="margin-top: 10px; text-align: center;">
@@ -7,7 +7,7 @@
     </ul>
   </mat-sidenav>
 
-  <mat-sidenav-content>
+  <mat-sidenav-content style="overflow-x: hidden;">
     <main>
       <header>
         <app-navbar>

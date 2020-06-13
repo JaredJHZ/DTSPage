@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
+@import './assets/animate.css';
+html, body {}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  background-color: #eff0f0 !important; }
 
 .text-center {
@@ -8,14 +8,42 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  background
     margin: 0 !important;
 }
 
-.mat-dialog-container {
-  padding: 0 !important;
+
+.m-0 {
+  margin: 0;
 }
 
-.mat-card {
-  width: 80%;
+.w-100 {
+  width: 100% !important;
+  margin: 0;
+}
+
+.animated-delay-1 {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+}
+
+.animated-delay-2 {
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+}
+
+.animated {
+  visibility: visible !important;
+}
+.hide-on-init {
+  visibility: hidden;
+}
+
+.center-content {
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 @keyframes fadeIn {
