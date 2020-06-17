@@ -1,14 +1,9 @@
-<div style="display: flex; justify-content: center; padding: 5px; align-items: center; align-content: center; height: 100%; width: 100%;">
-    <mat-card style="width:  100% !important;">
-        <mat-card-header>
-            <mat-card-title>{{data['name']}}</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-            <p *ngFor="let desc of data['description']" > {{desc}} </p>
-            <ul>
-                <li *ngFor="let service of data['services'] ">{{service}}</li>
-            </ul>
-        </mat-card-content>
-    </mat-card>
+<div style="display: flex; justify-content: center; align-items: center; align-content: center; flex-flow: column;">
+   <h1 style="text-align: center;">
+       Mensaje enviado con exito
+   </h1>
+   <div style="width: 100%; display: flex; justify-content: center; align-content: center; align-items: center;">
+        <mat-icon style=" text-align: center; font-size: 50px;" >mood</mat-icon>
+   </div>
 </div>
 

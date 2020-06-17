@@ -1,0 +1,25 @@
+<mat-toolbar style="height: auto;">
+    <div class="row w-100" style="display: flex; justify-content: center; align-items: center; align-content: center; padding: 30px;">
+        <div class="col-md-4">
+            <div class="row w100 justify-content-center">
+                <img src="assets/img/dtsLogo.png" alt="logo" class="logo">
+            </div>
+        </div>
+        <div class="col-md-4">
+           <div class="mapa">
+                <h1>Ir a</h1>
+                <span> <a [routerLink]="['/soluciones']">Soluciones</a></span>
+                <span> <a [routerLink]="['/contactanos']">Contactanos</a></span>
+           </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mapa">
+                <h1>Contacto</h1>
+                <div class="info">
+                    <span> <mat-icon style="font-size: 17px;" >phone</mat-icon>+52 3314379029</span>
+                    <span> <mat-icon  style="font-size: 17px;">email</mat-icon>contacto@dtssolutions.com.mx</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-toolbar>

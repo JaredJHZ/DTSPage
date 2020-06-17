@@ -1,4 +1,4 @@
-<div class="article" animateOnScroll animated-delay-1 animationName="animated fadeInDown" style="height: 93vh;">
+<div class="article" animateOnScroll animated-delay-1 animationName="animated fadeInDown">
     <div class="article-img">
         <img src="assets/img/software.png" alt="software">
     </div>
@@ -29,3 +29,98 @@
         </mat-card>
     </div>
 </div>
+
+<div class="article" animateOnScroll animated-delay-1 animationName="animated bounceInLeft">
+    <div class="content-left">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    E-commerce
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p *ngFor="let solucion of soluciones[0]['description']">
+                    {{solucion}}
+                </p>
+                <p>Nuestros soluciones incluyen: </p>
+                <ul>
+                    <li *ngFor="let servicio of soluciones[0]['services']">
+                        {{servicio}}
+                    </li>
+                </ul>
+                <ul class="logos">
+                    <li><img src="https://png2.cleanpng.com/20180408/kyq/kisspng-web-development-responsive-web-design-e-commerce-b-ecommerce-5aca701961ed82.1085468115232164094011.png" alt="ec"></li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="article-img">
+        <img src="assets/img/ecommerce.png" alt="software">
+    </div>
+</div>
+
+<div class="article" animateOnScroll animated-delay-1 animationName="animated bounceInRight">
+    <div class="article-img">
+        <img src="assets/img/aws.png" alt="software">
+    </div>
+    <div class="content-right">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    Cloud Computing
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p *ngFor="let solucion of soluciones[3]['description']">
+                    {{solucion}}
+                </p>
+                <ul>
+                    <li *ngFor="let servicio of soluciones[3]['services']">
+                        {{servicio}}
+                    </li>
+                </ul>
+                <ul class="logos">
+                    <li><img src="https://www.zipitwireless.com/wp-content/uploads/2017/01/AWS-Consulting-Partner-Badge.png" alt="consulting"></li>
+                    <li><img src="https://images.youracclaim.com/size/680x680/images/1fdcf6a9-de8e-4e35-96b0-e801d8411506/AWS-CloudPractitioner.png" alt="cloud"></li>
+                    <li><img src="https://images.youracclaim.com/size/680x680/images/2a15d440-edbe-44a2-890f-0a0caf7e1442/AWS-Developer-Associate.png" alt="angular"></li>
+                    <li><img src="https://images.youracclaim.com/images/6774b3bf-7a82-4d40-a2d1-86b412635bae/AWS-SolArchitect-Associate.png" alt="angular"></li>
+                    <li><img src="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Solutions-Architect_Professional_512x512.c51482be8f98b8c9116fddc5918105cb12ecb280.png" alt="angular"></li>
+                    
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+
+<div class="article" animateOnScroll animated-delay-1 animationName="animated bounceInLeft">
+    <div class="content-left">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    Aplicaciones móviles
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p *ngFor="let solucion of soluciones[1]['description']">
+                    {{solucion}}
+                </p>
+                <p>Nuestros soluciones incluyen: </p>
+                <ul>
+                    <li *ngFor="let servicio of soluciones[1]['services']">
+                        {{servicio}}
+                    </li>
+                </ul>
+                <ul class="logos">
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ionic_Logo.svg/512px-Ionic_Logo.svg.png" alt="ionic"></li>
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" alt="flutter"></li>
+                    <li><img src="https://logos-download.com/wp-content/uploads/2016/10/Java_logo_icon.png" alt="java"></li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="article-img">
+        <img src="assets/img/appmovil.png" alt="software">
+    </div>
+</div>
+<app-footer></app-footer>

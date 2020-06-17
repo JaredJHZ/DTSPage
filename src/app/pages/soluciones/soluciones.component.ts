@@ -14,7 +14,8 @@ export class SolucionesComponent implements OnInit {
       "name":"E-commerce",
       "image": "assets/img/ecommerce.png",
       "description": [
-        `Nuestro servicio de E-commerce está basado en las mejores prácticas de desarrollo como lo son pruebas de implementación, planificación y programación del sistemas.`
+        `Nuestro servicio de E-commerce está basado en las mejores prácticas de desarrollo como lo son pruebas de implementación, planificación y programación del sistemas.`,
+        "Contamos con soluciones de E-Commerce completamente Serverless utilizando la tecnología de AWS"
       ],
       "services": [
         'Soporte, dudas o inquietudes sobre su plataforma de comercio electrónico Digital. ',
@@ -30,6 +31,11 @@ export class SolucionesComponent implements OnInit {
         `Contamos con la experiencia de desarrollar aplicaciones nativas  IOS para toda la gama de dispositivos móviles de Apple. `,
         `Desarrollo de aplicaciones Android: `,
         `Desarrollamos aplicaciones a la medida explotando todas las funcionalidades que ofrece el sistema operativo Android. Utilizando siempre la versión más reciente y los paquetes API.  `
+      ],
+      "services": [
+        "Aplicaciones móviles hibridas con Ioinic",
+        `Aplicaciones hechas en Flutter`,
+        `Aplicaciones nativas en Android`
       ]
     },
     {
@@ -53,44 +59,23 @@ export class SolucionesComponent implements OnInit {
       "name": "Cloud Computing",
       "image": "assets/img/aws.png",
       "description": [
-        `Asesoramos y les brindamos las mejores alternativas a nuestros clientes para iniciar, adoptar e implementar soluciones y servicios avanzados en la gestión de plataformas Cloud y entornos híbridos, combinando la optimización los recursos ya existentes con los más innovadores recursos de la nube pública. `,
-        `Garantizando en todo momento la continuidad del negocio y facilitando el desarrollo nativo de aplicaciones en la nube con las ventajas de flexibilidad, escalabilidad y alta disponibilidad de los negocios exponenciales. `,
-        `Nuestro portafolio de soluciones de Cloud Computing está desarrollado con tecnología de Amazon Web Services y se  incluyen los servicios de: `
+        "Cuando eliges DTS, vas a trabajar mano a mano con profesionales expertos en servicios Cloud, que te ayudarán a lograr que tu negocio de ensueños resalte con las tecnologías de AWS.",
+        "Nuestro equipo provee un alto nivel técnico que te ayudarán a desbloquear valores agregados a tu negocio con la ayuda de las tecnologías de AWS.",
+        "Somos Partners de AWS!"
       ],
       "services": [
-        `DevOps`,
-        `Contenedores`,
-        `Serverless`,
-        `Bases de Datos`,
-        `Servicios de migración`,
-        `Infraestructura`,
-        `Almacenamiento`
+        "Consultoría",
+        "Infraestructura como código",
+        "DevOps",
+        "Migraciones",
+        "Soluciones Serverless",
+        "Seguridad"
       ]
     }
   ]
 
  q
   constructor(public dialog: MatDialog) { }
-
-
-  openDialog(name:string ,description: string, services: string): void {
-    const dialogRef = this.dialog.open(ModalComponent, {
-      width: '80%',
-      data: {
-        name,
-        description,
-        services
-      }
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
-  }
-
-  verMasHandler(name:string , description: string, services:string): void {
-    this.openDialog(name , description, services);
-  }
 
   ngOnInit(): void {
   }

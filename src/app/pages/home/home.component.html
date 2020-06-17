@@ -1,4 +1,4 @@
-<article style="background-color: white !important; height: 100vh;" animateOnScroll animationName="animated fadeIn">
+<article style="background-color: white !important; height: 100vh; margin-bottom: 20px;" animateOnScroll animationName="animated fadeIn">
 
     <div class="bg-image content w-100">
 
@@ -23,22 +23,20 @@
 
         <div class="row align-items-center m-0 w-100 justify-content-center icons" style="width: 95%; margin-top: 8%; height: 20%;">
           <div class="col-3 text-center">
-            <img src="https://www.vippng.com/png/full/138-1389933_ios-logo-icono-descarga-gratuita-y-ios.png" alt="ios">
-          </div>
-          <div class="col-3 text-center">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Android_logo_2019.svg/1173px-Android_logo_2019.svg.png" alt="android">
-          </div>
-          <div class="col-3 text-center">
-            <img src="https://icons.iconarchive.com/icons/thehoth/seo/256/seo-web-code-icon.png" alt="code">
-          </div>
-          <div class="col-3 text-center">
             <img src="https://i.ya-webdesign.com/images/cloud-computing-png-4.png" alt="aws">
           </div>
+          <div class="col-3 text-center">
+            <img src="https://wpsoul.com/wp-content/uploads/2019/04/Html-512.png" alt="aws">
+          </div>
+          <div class="col-3 text-center">
+            <img src="https://img.pngio.com/application-software-development-consulting-companies-atlogys-mobile-app-development-png-300_320.png" alt="aws">
+          </div>
         </div>
-
-        <div class="row align-items-center justify-content-center">
+        
+        <div class="row align-items-center justify-content-center" style="margin-bottom: 20px;">
             <div class="center-content">
-                <button (click)="scroll(about)" mat-raised-button>Descubre</button>
+                <button (click)="scroll(about)" mat-flat-button color="primary"><mat-icon>keyboard_arrow_down
+                </mat-icon></button>
             </div>
         </div>
     </div>
@@ -48,10 +46,12 @@
   <app-about></app-about>
 </article>
 
-<article #about animateOnScroll animated-delay-1 animationName="animated pulse" >
+<article #about animateOnScroll animated-delay-1 animationName="animated pulse" class="mobile" >
   <app-values></app-values>
 </article>
 
-<article #about animateOnScroll animated-delay-1 animationName="animated tada" >
+<article #about animateOnScroll animated-delay-1 animationName="animated bounceInLeft" >
   <app-valores></app-valores>
 </article>
+
+<app-footer></app-footer>

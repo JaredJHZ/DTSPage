@@ -1,12 +1,22 @@
-<mat-toolbar style="display: flex;">
+<mat-toolbar style="display: flex; height: 90px; position: relative;" >
+    <div class="hamburger-container">
+        <button (click)="toggleSidenav()" [class.is-active]="open" style="outline: none; " class="hamburger hamburger--collapse" type="button" >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
     <div class="container-image">
         <img src="assets/img/dtsLogo.png" (click)="goToRoute('/')" />
     </div>
-    <ul class="label-lists" style="width: 80vw; height: 100%;">
+    <ul class="label-lists" style="width: 80vw; height: 100%; user-select: none;">
         <!-- <li><button style="font-size: 22px;" mat-button  (click)="goToRoute('/')">DTS Solutions</button></li> -->
-        <li *ngFor="let label of _menuService.getLabels()"><button style="font-size: 22px;" mat-button (click)="goToRoute(label['route'])">{{label['name']}}</button></li>
+        <li *ngFor="let label of _menuService.getLabels()"><button style="font-size: 22px; outline: none;" mat-button (click)="goToRoute(label['route'])">{{label['name']}}</button></li>
     </ul>
-    <div class="hide" style="display: flex; justify-content: flex-end; width: 70%;">
-        <a (click)="toggleSidenav()" style="width: 20%; margin-top: 5%;"><mat-icon style="font-size: 52px;">menu</mat-icon></a>
-    </div>
+
+    <ul style="margin: 0; padding: 0; width: 20vw;" class="social-network">
+        <li> <a target="_blank" href="https://api.whatsapp.com/send?phone=52 1 33 1437 9029"><img src="https://www.mundoemprende.com/wp-content/uploads/2017/09/whatsapp-official-logo-png-download.png" alt="whats"></a></li>
+        <li><img src="https://i.ya-webdesign.com/images/logos-redes-sociales-png-facebook-3.png" alt="fb"></li>
+        <li><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" alt="twitter"></li>
+    </ul>
 </mat-toolbar>

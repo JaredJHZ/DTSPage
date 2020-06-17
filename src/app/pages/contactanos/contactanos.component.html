@@ -1,33 +1,39 @@
-<div class="main" style="background-color: white !important;">
+<div class="main" style="background-color: white !important;" animateOnScroll animated-delay-1 animationName="animated fadeIn">
     <div class="img">
         <img src="assets/img/dtsLogo.png" alt="logo" style="width: 35%;">
     </div>
-    <mat-card class="custom">
+    <mat-card *ngIf="!loading" class="custom">
         <mat-card-header>
             <mat-card-title>Contactanos</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <mat-form-field style="width: 100%;" appearance="outline">
-                <mat-label>Nombre</mat-label>
-                <input color="accent" matInput placeholder="Nombre">
-                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-            </mat-form-field>
+            <form [formGroup]="contacto" (ngSubmit)="sendEmail()" novalidate>
+                <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>Nombre</mat-label>
+                    <input formControlName='nombre' color="accent" matInput placeholder="Nombre">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+    
+                <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>Número telefónico</mat-label>
+                    <input formControlName='telefono' matInput placeholder="Nombre">
+                    <mat-icon  matSuffix>phone</mat-icon>
+                </mat-form-field>
+    
+                <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>¿En qué te podemos ayudar?</mat-label>
+                    <textarea formControlName='descripcion'  matInput></textarea>
+                    <mat-icon matSuffix>chat</mat-icon>
+                </mat-form-field>
+    
+                <div style="width: 100%; display: flex; justify-content: center;">
+                    <button [disabled]="!contacto.valid" mat-raised-button color="primary">Enviar</button>
+                </div>
 
-            <mat-form-field style="width: 100%;" appearance="outline">
-                <mat-label>Email</mat-label>
-                <input matInput placeholder="Nombre">
-                <mat-icon matSuffix>alternate_email</mat-icon>
-            </mat-form-field>
-
-            <mat-form-field style="width: 100%;" appearance="outline">
-                <mat-label>¿En qué te podemos ayudar?</mat-label>
-                <textarea matInput></textarea>
-                <mat-icon matSuffix>chat</mat-icon>
-            </mat-form-field>
-
-            <div style="width: 100%; display: flex; justify-content: center;">
-                <button mat-raised-button color="primary">Enviar</button>
-            </div>
+            </form>
         </mat-card-content>
     </mat-card>
+
+    <app-loading *ngIf="loading"></app-loading>
 </div>
+<app-footer></app-footer>

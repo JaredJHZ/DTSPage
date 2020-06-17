@@ -9,9 +9,16 @@ import { RouterLink, Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+  public open: boolean = false;
 
+  constructor(public _menuService: MenuServiceService, public _router: Router) { 
+    this._menuService.isOpened.subscribe(
+      (value) => {
+        this.open = value;
+      }
+    )
 
-  constructor(public _menuService: MenuServiceService, public _router: Router) { }
+  }
 
   ngOnInit(): void {
   }

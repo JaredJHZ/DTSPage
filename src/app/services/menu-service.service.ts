@@ -7,14 +7,18 @@ import { Observable, of, BehaviorSubject } from 'rxjs';
 })
 export class MenuServiceService {
 
-  private data = {
+  public data = {
     "menu": [
+        {
+        "name":"Nosotros",
+        "route":""
+        },
         {
             "name":"Soluciones",
             "route":"soluciones"
         },
         {
-            "name":"Contactos",
+            "name":"Contactanos",
             "route":"contactanos"
         }
     ]

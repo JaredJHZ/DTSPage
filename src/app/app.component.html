@@ -1,9 +1,13 @@
 <mat-sidenav-container style="overflow-x: hidden;">
-  <mat-sidenav #sidenav mode="over" [(opened)]="opened" style="width: 30%;">
+  <mat-sidenav #sidenav mode="over" (closed)="closed()" [(opened)]="opened" style="width: 30%;">
     <img style="margin-top: 25px;" style="width: 100%;" src="assets/img/dtsLogo.png" alt="logo">
     <ul class="label-lists" style="margin-top: 10px; text-align: center;">
-      <li style="margin-top: 25px;" *ngFor="let label of _menuService.getLabels()" (click)="goToRoute(label['route'])">{{label['name']}}</li>
-      <li style="margin-top: 25px;" (click)="goToRoute('/')">Inicio</li>
+      <li style="margin-top: 25px;" *ngFor="let label of labels; let i = index;" (click)="goToRoute(labels[i]['route'])">{{labels[i]['name']}}</li>
+    </ul>
+    <ul class="social-network">
+      <li> <a target="_blank" href="https://api.whatsapp.com/send?phone=52 1 33 1437 9029"><img src="https://www.mundoemprende.com/wp-content/uploads/2017/09/whatsapp-official-logo-png-download.png" alt="whats"></a></li>
+      <li><img src="https://i.ya-webdesign.com/images/logos-redes-sociales-png-facebook-3.png" alt="fb"></li>
+      <li><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" alt="twitter"></li>
     </ul>
   </mat-sidenav>
 

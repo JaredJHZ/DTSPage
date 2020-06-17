@@ -1,0 +1,37 @@
+.logo {
+    width: 30%;
+}
+
+.mapa {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mapa a {
+    text-decoration: none;
+    color: #9050c4;
+}
+
+.mapa a:hover {
+    font-weight: bolder;
+    color: black;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.info span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

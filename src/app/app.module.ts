@@ -16,6 +16,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ModalComponent } from './components/modal/modal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -27,13 +30,16 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     ValoresComponent,
     SolucionesComponent,
     ContactanosComponent,
-    ModalComponent
+    ModalComponent,
+    FooterComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
     NgbModule,

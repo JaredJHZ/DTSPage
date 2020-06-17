@@ -1,15 +1,32 @@
 .label-lists {
     display: flex;
-    flex-flow: column-reverse;
+    flex-flow: column;
     list-style: none;
     justify-content: center;
     align-content: center;
     align-items: center;
     padding: 0;
 }
-
 .label-lists li {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+.social-network {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    padding: 0;
+    height: 180px;
+    justify-content: space-around;
+}
+
+.social-network li {
+    display: flex;
+    justify-content: center;
+}
+
+.social-network img {
+    width: 35px;
 }
