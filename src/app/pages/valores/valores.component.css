@@ -4,62 +4,46 @@
     align-content: center;
     align-items: center;
     flex-flow: column;
-    height: 99vh;
 }
 
-.contenedor-tarjetas {
-    width: 20%;
-    animation: fadeIn 1.5s; 
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-
-
-
-
-.row {
-    height: 45%;
+.valor{
+    width: 60%;
+    height: 200px !important;
     display: flex;
-    justify-content: center;
-    padding: 10px;
-    width: 100%;
-}
-
-.srow {
-    height: 20%;
-    display: flex;
-    padding: 10px;
-    width: 100%;
     align-items: center;
-    align-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #e7e9ed;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
-.img {
-    height: 25vh;
-}
-.example-card {
-    height: 70%;
-}
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    margin: 0;
-    align-items: center;
-    align-content: center;
-    padding: 20px;
-    width: 100%;
+
+.valor:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-  
-.rowButtons {
-    padding: 2%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    font-size: 20px;
-    animation: fadeIn 1s;
+
+.title {
+    width: 60%;
+}
+
+.title h1 {
     width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+}
+
+.img {
+    width: 40%;
+    height: 100%;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
 }
   
 @media (max-device-width : 812px)

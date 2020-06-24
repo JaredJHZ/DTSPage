@@ -19,6 +19,8 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './components/loading/loading.component';
+import { DividerComponent } from './components/divider/divider.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { LoadingComponent } from './components/loading/loading.component';
     ContactanosComponent,
     ModalComponent,
     FooterComponent,
-    LoadingComponent
+    LoadingComponent,
+    DividerComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

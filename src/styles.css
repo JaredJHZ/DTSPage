@@ -57,6 +57,32 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  background
   width: 500px;
 }
 
+.text-large {
+  font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.9px;
+    margin-bottom: calc((1rem - 1.125rem) + 1rem* 2);
+
+}
+
+.text-title {
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-family: "Lato";
+  font-size: 3.05rem;
+  line-height: 4.125rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
 @keyframes fadeIn {
     from {
       opacity: 0;

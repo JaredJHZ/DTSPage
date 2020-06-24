@@ -1,50 +1,19 @@
 <article style="background-color: white !important; height: 100vh; margin-bottom: 20px;" animateOnScroll animationName="animated fadeIn">
-
     <div class="bg-image content w-100">
-
-      <div class="row align-items-center justify-content-center m-0  w-100" style="height: 70%;">
-        <div class="col-md-12" style="padding-top: 2%;">
-          <ngb-carousel>
-            <ng-template ngbSlide>
-              <div class="picsum-img-wrapper;">
-                <img [src]="images[0]" alt="Random first slide" class="car-img">
-              </div>
-            </ng-template>
-            <ng-template ngbSlide>
-              <div class="picsum-img-wrapper" >
-                <img [src]="images[1]" alt="Random second slide" class="car-img" >
-              </div>
-            </ng-template>
-          </ngb-carousel>
+      <div class="text">
+        <h2>Transformamos la manera en la que opera tu negocio</h2>
+        <h1>Líderes en innovación dígital</h1>
+        <div class="button">
+          <button (click)="scroll(about)" mat-raised-button color="primary">Conocenos!</button>
         </div>
       </div>
-
-
-
-        <div class="row align-items-center m-0 w-100 justify-content-center icons" style="width: 95%; margin-top: 8%; height: 20%;">
-          <div class="col-3 text-center">
-            <img src="https://i.ya-webdesign.com/images/cloud-computing-png-4.png" alt="aws">
-          </div>
-          <div class="col-3 text-center">
-            <img src="https://wpsoul.com/wp-content/uploads/2019/04/Html-512.png" alt="aws">
-          </div>
-          <div class="col-3 text-center">
-            <img src="https://img.pngio.com/application-software-development-consulting-companies-atlogys-mobile-app-development-png-300_320.png" alt="aws">
-          </div>
-        </div>
-        
-        <div class="row align-items-center justify-content-center" style="margin-bottom: 20px;">
-            <div class="center-content">
-                <button (click)="scroll(about)" mat-flat-button color="primary"><mat-icon>keyboard_arrow_down
-                </mat-icon></button>
-            </div>
-        </div>
     </div>
 </article>
 
-<article #about animateOnScroll animated-delay-1 animationName="animated fadeInDown" >
+<article #about animateOnScroll animated-delay-1 animationName="animated fadeIn" >
   <app-about></app-about>
 </article>
+
 
 <article #about animateOnScroll animated-delay-1 animationName="animated pulse" class="mobile" >
   <app-values></app-values>

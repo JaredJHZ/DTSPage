@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     animation: fadeIn 1.5s; 
-    height: 94vh;
+    height: 100%;
     width: 100vw;
   }
   
@@ -38,6 +38,37 @@
     height: 300px;
   }
 
+  .text {
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .text h1, h2 {
+    width: 30%;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: "Lato";
+    font-size: 3.05rem;
+    line-height: 4.125rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .button {
+    width: 30%;
+    position: relative;
+  }
+
+  .button button {
+    position: absolute;
+    left: 30%;
+  }
   
 
 
@@ -62,7 +93,7 @@
 
   .car-img {
     width: 100%;
-    height: 100px;
+    height: 140px;
   }
 
   .icons img {
@@ -78,6 +109,18 @@
   }
   .mobile {
     margin-bottom: 50px;
+  }
+
+  .text h1, h2 {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .button button {
+    left: 35%;
   }
 
 }

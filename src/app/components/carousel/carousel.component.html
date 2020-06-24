@@ -1,0 +1,16 @@
+<div class="row align-items-center justify-content-center m-0  w-100" style="height: 70%;">
+    <div class="col-md-12" style="padding-top: 2%;">
+      <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper;">
+            <img [src]="images[0]" alt="Random first slide" class="car-img">
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper" >
+            <img [src]="images[1]" alt="Random second slide" class="car-img" >
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </div>

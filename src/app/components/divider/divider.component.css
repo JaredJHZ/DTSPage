@@ -1,0 +1,32 @@
+.title {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+.three-dots {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  
+  .three-dots span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: black;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .animation {
+      animation: fadeIn 2s;
+  }
